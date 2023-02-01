@@ -1,0 +1,271 @@
+@charset "UTF8";
+
+/* animation-div */
+@keyframes animacao {
+    5% {background-color: red;}
+    10% {width: 150px; background-color: brown;}
+    15% {background-color: yellow;}
+    30% {font-size: 2em;}
+    60% {border: 6px solid; background-color: white;}
+  
+}
+
+@keyframes animacao2 {
+0%{}
+30% {width: 100px;}
+60% {background-color: red;}
+80% {left: 100px; background-color: blue;}
+100% {height: 100px;}
+}
+
+@keyframes animacao3 {
+  from{left: 0;}
+  to {left: 200px; background-color: green;}
+/* 0%{}
+30% {width: 100px;}
+60% {background-color: red;}
+80% {left: 100px; background-color: blue;}
+100% {height: 100px; font-family: 'Times New Roman', Times, serif;} */
+
+}
+@keyframes animacao4{
+  from {
+      left: 0;}  
+    to {left: 400px;}
+}
+
+@keyframes animacao5 {
+0% {left: 0%;}
+25% {left: 20px; background-color: blue;}
+60% {left: 100px; background-color:orange;}
+100% {left: 30px; background-color: red;}
+}
+.animation-div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: animacao;
+  animation-duration: 5s;
+}
+
+.animation-div2{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animacao2;
+    animation-duration: 6s;
+    position: relative;
+  }
+
+  .animation-div3{
+    /* animação com delei(animation-delay) e com repetição(animation-iteration-count) numero para decidir qts vezes vai repitir e infinitamente(infinite) */
+    display: flex;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    background-color: purple;
+    position: relative;
+    animation-name: animacao3;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  .box{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  #animation-div4 {
+  animation-timing-function: linear;
+  }
+
+    #animation-div5 {
+      animation-timing-function: ease;
+    }
+
+        #animation-div6 {
+          animation-timing-function: ease-in;
+        }
+
+                #animation-div7 {
+                  animation-timing-function: ease-out;
+                }
+
+                                #animation-div8 {
+                                  animation-timing-function: ease-in-out;
+                                }
+#animation-div9 {
+  background-color: darkblue;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* shorthand: nome, duração, timing-function, delay, iteration */
+  animation: animacao5 8s ease-out 4s infinite;
+}
+
+/* Transition (trasição de efeito) */
+.btn {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 75px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #333;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: #fff;
+}
+
+.transition {
+  width: 50px;
+  height: 100px;
+  background-color: red;
+  transition: 4s;
+}
+
+.transition:hover{
+  width: 300px;
+}
+
+/* calculo "calc" */
+.div-calc{
+  height: 250px;
+  width: 500px;
+  position: relative;
+  margin: 20px;
+  background-color: #ddd;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.innerdiv-calc {
+  height: 50px;
+  margin: 10px;
+  position: relative;
+  background-color: darkred;
+}
+
+.calc1 {
+  width: calc(50% + 50px);
+}
+.calc2 {
+  width: calc(50% - 50px);
+}
+.calc3 {
+  width: calc(50% * 2);
+  margin: 0px;
+}
+.calc4 {
+  width: calc(50% / 2);
+}
+
+/* Gradiente(gradient) */
+.gradient-box {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  margin: 20px;
+}
+
+.gradient1{
+  background-image: linear-gradient(purple, blue);
+}
+.gradient2 {
+  background-image: linear-gradient(to right, purple, blue);
+}
+.gradient3 {
+  background-image: linear-gradient(to left, purple, blue);
+}
+.gradient4 {
+  background-image: linear-gradient(to top, purple, blue);
+}
+.gradient5 {
+  background-image: linear-gradient(to top right, purple, blue);
+}
+.gradient6 {
+  background-image: linear-gradient(rgba(199, 0, 0, 0.918), rgba(255, 255, 255, 0.897), rgba(0, 0, 0, 0.897));
+}
+/* Gradiente radial forma oval ou circulo */
+.gradient7 {
+  background-image: radial-gradient(#3a3042, #DB9D47, #ff784f);
+}
+.gradient8 {
+  background-image: radial-gradient(#3a3042 10%, #DB9D47 20%, #ff784f);
+}
+.gradient9 {
+  background-image: radial-gradient(circle, #3a3042 20%, #DB9D47 25%, #ff784f);
+}
+/* Font Face */
+@font-face {
+  font-family: Lage Grafica;
+  src: url(fonts/lage_grafica.ttf);
+}
+.fontface {
+  font-family: "Lage Grafica";
+}
+/* media query */
+
+.mediaquery {
+  height: 200px;
+  width: 1200px;
+  background-color: red;
+  border: 1px solid black;
+}
+@media(max-width: 1000px){
+  .mediaquery {
+    width: 900px;
+    background-color: blue;
+  }
+}
+@media(max-width: 768px) {
+  .mediaquery {
+    width: 600px;
+    background-color: green;
+  }
+}
+@media(max-width: 512px) {
+  .mediaquery {
+    width: 400px;
+    background-color: #3a3042;
+  }
+}
+/* border radius (borda aredondadas) */
+.div-border {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  margin: 20px;
+}
+.border-radius1 {
+  border-radius: 50%;
+}
+.border-radius2 {
+  border-top-right-radius: 5%;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 20%;
+}
