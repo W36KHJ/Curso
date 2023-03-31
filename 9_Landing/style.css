@@ -172,4 +172,15 @@ body{
 }
 #about-location p {
   line-height: 1.3em;
+  font-weight: 500;
+}
+
+/* Event details container */
+#details {
+  width: 80%;
+  margin: 0 auto;
+}
+.detail {
+  display: flex;
+  align-items: flex-start;
 }
