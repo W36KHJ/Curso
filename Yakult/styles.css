@@ -11,6 +11,7 @@ section {
   background-image: url("Formas-1.svg");
   width: 100%;
   background-size: cover;
+  background-position: 100%;
 }
 section url {
   padding-top: 50px;
