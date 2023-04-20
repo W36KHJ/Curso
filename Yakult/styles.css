@@ -1,0 +1,89 @@
+body {  
+  margin: 0;
+}
+
+aside {  
+  height: 60px;
+  background-color: #fff;
+}
+section {
+  background-color: #FF153D;
+  background-image: url("Formas-1.svg");
+  width: 100%;
+  background-size: cover;
+}
+section url {
+  padding-top: 50px;
+}
+
+.logo {
+  background-color: #fff;
+}
+
+.logo img {
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
+.logo p {
+  color: #FF153D;
+  text-align: right;
+  position: absolute;
+  top: 7px;
+  right: 30px;
+  /* padding-right: 25px; */
+}
+
+.container1 {
+  display: flex;
+}
+
+.descr {
+  width: 380px;
+  height: 100px;
+  padding-top: 110px;
+  padding-left: 85px;
+  padding-right: 30px;
+}
+
+.descr p {
+  color: #FEE5D8;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.saude {
+  padding-top: 70px;
+  width: 380px;
+}
+
+.saude p {
+  padding-top: 50px;
+  color: #FEE5D8;
+  padding-left: 85px;
+}
+
+.btn1 {
+  margin-left: 85px;
+  margin-top: 30px;
+  padding: 10px 80px 10px 80px;
+  background-color: #FEE5D8;
+  color: #FF153D;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.video1 iframe {
+  height: 400px;
+  width: 800px;
+  padding-top: 90px;
+  padding-right: 20px;
+}
+
+.formap img {
+  position: relative;
+  object-fit: cover;
+  box-sizing: border-box;
+  width: 100%;
+}

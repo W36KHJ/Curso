@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="60" viewBox="0 0 400 60">
+  <g id="Botão" transform="translate(0 -79.592)">
+    <rect id="Botão-2" data-name="Botão" width="400" height="60" rx="6" transform="translate(0 79.592)" fill="#ff153d"/>
+    <text id="Pesquisar" transform="translate(200 117.592)" fill="#fee5d8" font-size="22" font-family="Montserrat-Regular, Montserrat"><tspan x="-53" y="0">Pesquisar</tspan></text>
+  </g>
+</svg>
