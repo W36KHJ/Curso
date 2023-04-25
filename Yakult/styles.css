@@ -1,17 +1,21 @@
 body {  
   margin: 0;
+  background-color: #FEE5D8;
 }
 
 aside {  
   height: 60px;
   background-color: #fff;
 }
+.containerpris{
+  display: inline-block;
+}
 section {
   background-color: #FF153D;
-  background-image: url("Formas-1.svg");
-  width: 100%;
-  background-size: cover;
-  background-position: 100%;
+
+}
+url {
+  width: 30%;
 }
 section url {
   padding-top: 50px;
@@ -37,8 +41,13 @@ section url {
 
 .container1 {
   display: flex;
-}
-
+  height: 681px;
+  background-image: url("Formas-1.svg");
+  background-repeat: no-repeat;
+  width: 100%;  
+  background-size: 100%;
+  background-position: 0px 408px;
+  }
 .descr {
   width: 380px;
   height: 100px;
@@ -82,9 +91,176 @@ section url {
   padding-right: 20px;
 }
 
-.formap img {
+.conheca {
+  background-color: #FEE5D8;
+}
+.conheca p,h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #FF153D;
+  width: auto;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+.conheca h3 {
+  font-size: 30px;
+}
+.conheca p {
+  font-size: 20px;
+}
+
+/* Conheça as opções */
+
+.specialties-container {
+  background-color: #fff;
+  padding: 5em 0;
+}
+.specialties-container h1 {
+  color: #FF153D;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.specialties-container ul {
+  display: flex;
+  width: 90%;
   position: relative;
-  object-fit: cover;
-  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.specialties-container ul li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+.fas {
+  display: flex;
+  color: #FF153D;
+  background-repeat: no-repeat;
+  /* margin-left: 130px; */
+  width: 130px;
+  height: 115px;
+  font-size: 60px;
+  margin-bottom: 15px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-shield-alt {
+  color: #2CC76A;
+  background-image: url("Icon_Aceitação.svg");
+  }
+.fa-shield {
+  color: #2CC76A;
+  background-image: url("Icon_Save\ Money.svg");
+}
+
+.fa-rocket {
+  background-image: url("Icon_delivery.svg");
+  color: #ef3f29;
+}
+.fa-rock {
+  background-image: url("Yakult.svg");
+  color: #ef3f29;
+}
+
+.fa-comments {
+  background-image: url("Icon_clock.svg");
+  color: #ef8f29;
+}
+.fa-commen {
+  background-image: url("Icon_Orçamento.svg");
+  color: #ef8f29;
+}
+
+.specialties-container ul li h3 {
+  margin-bottom: 25px;
+  color: #FF153D;
+}
+
+.specialties-container ul li p {
+  line-height: 24px;
+  color: #FF153D;
+}
+.tp-list {
+  display: flex;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 80px;
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
+  color: #FF153D;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* .tp-list,  */
+.tfoot {  
+  background-image: url("Formas.svg");
+  background-color: #fff;
+  height: 500px;
+  display: flex;    
+  background-repeat: no-repeat;
   width: 100%;
+  background-size: 100%;
+  background-position: 0px -30px;
+}
+.banforma {
+  background-image: url("Intro.svg");
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  background-size: 100%;
+  background-position: 0px 303px;
+}
+.bantex {  
+  width: auto;
+  padding-top: 242px;
+  text-align: center;
+  color: #FF153D;
+}
+.bantex h4 {
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  margin: 0;
+  padding-top: 50px;
+  padding: 90px 100px 30px;
+  font-size: 46px;
+  background-color: #FEE5D8;
+}
+.bantex p {
+  background-color: #FEE5D8;
+  font-size: 18px;
+  /* padding: 0px 0px 0px 90px; */
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main input[type=tel] {
+  padding: 10px 80px 10px 70px;
+  background-color: #fff;
+  color: #FF153D;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+}
+.bntcep p {
+  text-align: left;
+  padding-left: 180px;
+}
+@media screen and (max-width: 300px) {
+
+  /* regras css */
+  .specialties-container{
+    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
