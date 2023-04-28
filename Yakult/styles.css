@@ -9,6 +9,8 @@ aside {
 }
 .containerpris{
   display: inline-block;
+  width: 100%;
+  height: auto;
 }
 section {
   background-color: #FF153D;
@@ -41,6 +43,7 @@ section url {
 
 .container1 {
   display: flex;
+  justify-content: center;
   height: 681px;
   background-image: url("Formas-1.svg");
   background-repeat: no-repeat;
@@ -223,6 +226,8 @@ section url {
   width: auto;
   padding-top: 242px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   color: #FF153D;
 }
 .bantex h4 {
@@ -255,12 +260,36 @@ main input[type=tel] {
   text-align: left;
   padding-left: 180px;
 }
-@media screen and (max-width: 300px) {
-
+@media screen and (max-width: 500px) {
   /* regras css */
-  .specialties-container{
+  .descr p {
+    font-size: 20px;
+  }
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+  .logo img {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    height: 100%;
+  }
+  .container1 {
     /* display: flex; */
     display: flex;
     flex-wrap: wrap;
+    width: 65%;
+    height: auto;
+    background-image: none;
+    font-size: 16px;
+  }
+  .container1 .descr .video1 {
+    width: 100%;
   }
 }
