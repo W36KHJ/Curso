@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border image repeat</title>
+  <style>
+    /* * {
+      box-sizing: border-box;
+    } */
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    div{
+      width: 500px;
+      height: 500px;
+      background-color: #fbc533;
+      border: 1px solid #fbc533;
+      /* border-image-source: url("imagens/border-image-source.png");
+      border-image-slice: 100;
+      border-image-width: 50px;      
+      border-image-outset: 100px;     
+      border-image-repeat: round; */
+      /* abreviação do modo border-image 
+      ordem
+      border-image-source, border-image-slice, border-image-width,, border-image-outset, border-image-repeat */
+      border-image: url("imagens/border-image-source.png") 100 / 50 / 100 round;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  
+</body>
+</html>

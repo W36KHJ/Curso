@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height em geral</title>
+  <style type="text/css">
+      /*Exemplo Max Height... */
+    /* div{
+      max-height: 200px;
+      width: 100px;
+      background-color: #74b9ff;
+  }  */
+
+  /* div{
+    /*Exemplo Min Height... 
+    background-color: #dcdde1;
+    width: 10%;
+    min-height: 250px;
+    height: 10vh;
+  }  */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+    .fundo {
+      width: 100vw;
+      margin: 0;
+    }
+    .fundo > div[class^=largura] {
+      border-style: solid;
+      border-width: 2px;
+      margin-bottom: 5%;
+      height: 40px;
+      overflow: hidden;
+    }
+    .largura-auto {
+      display: unset;
+      width: auto;
+      border-color: #00598daa;
+    }
+    .largura-vwvh {
+      width: 50vw;
+      border-color: #008d44aa;
+    }
+    .largura-percent {
+      width: 50%;
+      border-color: #E86767aa;
+    }
+    .largura-pixel {
+      width: 350px;
+      border-color: #c82aaeaa;
+    }
+    .largura-fit {
+      width: fit-content;
+      border-color: #c2f01caa;
+    }
+    .largura-max {
+      width: max-content;
+      border-color: #7c2ac8aa;
+    }
+    .largura-min {
+      width: min-content;
+      border-color: #2ac3c8aa;
+    }
+    .largura-revert {
+      width: revert;
+      border-color: #c82a2aaa;
+    }
+    .largura-unset {
+      width: unset;
+      border-color: #57c82aaa;
+    }
+  </style>
+</head>
+<body>
+  
+    <div class="fundo">
+
+      <div class="largura-auto">AUTO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-vwvh">VWVH: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-percent">PERCENT: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-pixel">PIXEL: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-fit">FIT: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-max">MAX: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-min">MIN: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-revert">REVERT: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+        <div class="largura-unset">UNSET: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque rem eligendi eos dicta, expedita doloremque odit omnis nulla enim ullam, asperiores eaque assumenda. Fugiat velit earum nesciunt est ab.</div>
+
+    </div>
+  
+</body>
+</html>

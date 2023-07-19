@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin-left variações</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+    }
+    .bloco{
+      width: 20vw;
+      height: 20vw;
+      background-color: #487eb0;
+      
+    }
+    .bloco:first-child {
+      /* margin-left: unset; */
+      /* margin-left: 0; */
+      /* margin-left: initial; */
+    }
+    /* ambas opções são viavel para deixa só o item a frente com margin 
+    .bloco:first-child ou .bloco + .bloco 
+    primeiro objeto fica sem margin mais o resto seguinte tem 
+    */
+    .bloco + .bloco {
+      margin-left: 2vw;
+    }
+  </style>
+</head>
+<body>
+   <div class="bloco"></div>
+   <div class="bloco"></div>
+   <div class="bloco"></div>
+   <div class="bloco"></div>
+</body>
+</html>

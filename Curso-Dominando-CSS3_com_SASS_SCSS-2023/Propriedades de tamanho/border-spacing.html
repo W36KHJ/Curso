@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border collapse</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    table{
+      border: solid 1px #333;
+      width: 70vw;
+      border-collapse: collapse;
+      border-spacing: 0px;
+    }
+    td, th {
+      border: solid 1px #333;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Cargo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>William</td>
+        <td>william@gmail.com</td>
+        <td>(11) 99999-8877</td>
+        <td>Dev.</td>
+      </tr>
+        <tr>
+        <td>Fabiana</td>
+        <td>fabiana@gmail.com</td>
+        <td>(11) 99999-8877</td>
+        <td>Dev.</td>
+      </tr>
+        <tr>
+        <td>Suelem</td>
+        <td>suelem@gmail.com</td>
+        <td>(11) 99999-8877</td>
+        <td>Editora</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>

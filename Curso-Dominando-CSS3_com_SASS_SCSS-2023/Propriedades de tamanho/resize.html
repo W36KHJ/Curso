@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resize</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container{
+      /* width: 50vw;
+      height: 200px;
+      border: #000 5px solid;
+      overflow-inline: auto; */
+    }
+    .item {
+      resize: both;
+      overflow: auto;
+    }
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>  
+   <div class="container">
+    <p class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente eos eligendi omnis eius optio beatae cumque vitae modi libero dolor voluptatibus sed qui, sunt officiis, a asperiores assumenda! Dolor, quos!</p>
+    <p class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente eos eligendi omnis eius optio beatae cumque vitae modi libero dolor voluptatibus sed qui, sunt officiis, a asperiores assumenda! Dolor, quos!</p>
+   </div>
+   <form>
+    <textarea></textarea>
+   </form>
+</body>
+</html>
