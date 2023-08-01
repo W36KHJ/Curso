@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-direction</title>
+  <style>
+    .container {
+      display: flex;
+      width: 80%;
+      height: 90vh;
+      flex-direction: row-reverse;
+      box-shadow: 0 0 10px rgba(100, 100, 100, .5);
+    }
+    .container > div {
+      width: 150px;
+      height: 150px;
+      border-width: .5px;
+      border-style: solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container > div:hover {
+      color: #fdcb6e;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>  
+   <div class="container">
+    <div class="A">A</div>
+    <div class="B">B</div>
+    <div class="C">C</div>
+    <div class="D">D</div>
+   </div>
+   
+</body>
+</html>

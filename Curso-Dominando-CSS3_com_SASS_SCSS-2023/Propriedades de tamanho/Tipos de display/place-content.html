@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>place-content</title> 
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      /* align-content: space-between;
+      justify-content: center; */
+      /* O place-content é abreviação do align-content e justify-content */
+      place-content: space-between center;
+    }
+    .container > div {
+      width: 100px;
+      height: 250px;
+      background-color: red;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>  
+   <div class="container">
+
+    <div class="A">A</div>
+    <div class="B">B</div>
+    <div class="C">C</div>
+    <div class="D">D</div>
+    <div class="E">E</div>
+  </div>
+   
+</body>
+</html>
